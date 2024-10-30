@@ -2,6 +2,10 @@
 
 **React Pure Loaders** is a lightweight library of loading animations made with pure CSS. These loaders are perfect for performance-focused applications and can be customized with different sizes and colors to fit your design needs.
 
+## Current Version
+
+- Version: 1.0.0
+
 ## Installation
 
 Install the package with npm:
@@ -9,6 +13,13 @@ Install the package with npm:
 ```bash
 npm install react-pure-loaders
 ```
+
+## Peer Dependencies
+
+Make sure you have the following dependencies installed in your project:
+
+- `react` ^18.0.0
+- `react-dom` ^18.0.0
 
 ## Usage
 
