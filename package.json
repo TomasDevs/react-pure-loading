@@ -5,6 +5,11 @@
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tomasdevs/react-pure-loading.git"
