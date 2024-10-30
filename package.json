@@ -1,9 +1,15 @@
 {
   "name": "react-pure-loading",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "license": "MIT",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomasdevs/react-pure-loading.git"
+  },
+  "homepage": "https://github.com/tomasdevs/react-pure-loading#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
