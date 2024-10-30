@@ -1,0 +1,36 @@
+.bars {
+  width: 3.2rem;
+  height: 2.8rem;
+  --bar-color: linear-gradient(currentColor 0 0);
+  background: var(--bar-color) 0% 50%, var(--bar-color) 50% 50%,
+    var(--bar-color) 100% 50%;
+  background-size: 0.65rem 100%;
+  background-repeat: no-repeat;
+  animation: bars-animation 1s infinite linear;
+}
+
+.bars.small {
+  width: 2rem;
+  height: 1.75rem;
+  background-size: 0.5rem 100%;
+}
+
+.bars.large {
+  width: 4rem;
+  height: 3.5rem;
+  background-size: 0.8rem 100%;
+}
+
+@keyframes bars-animation {
+  33% {
+    background-size: 0.65rem 10%, 0.65rem 100%, 0.65rem 100%;
+  }
+
+  50% {
+    background-size: 0.65rem 100%, 0.65rem 10%, 0.65rem 100%;
+  }
+
+  66% {
+    background-size: 0.65rem 100%, 0.65rem 100%, 0.65rem 10%;
+  }
+}

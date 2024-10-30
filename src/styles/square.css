@@ -1,0 +1,28 @@
+.square {
+  width: 1rem;
+  height: 1rem;
+  background-color: currentColor;
+  animation: square-bounce 0.6s infinite alternate ease-in-out;
+}
+
+.square.small {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.square.large {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@keyframes square-bounce {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-0.5rem) rotate(15deg);
+  }
+  100% {
+    transform: translateY(-1rem) rotate(-15deg);
+  }
+}

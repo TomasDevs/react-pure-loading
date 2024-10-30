@@ -1,0 +1,24 @@
+.progress {
+  width: 6rem;
+  height: 1rem;
+  -webkit-mask: linear-gradient(90deg, currentColor 70%, transparent 0) left/20%
+    100%;
+  background: linear-gradient(currentColor 0 0) left/0% 100% no-repeat #dbdcef;
+  animation: progress-animation 2s infinite steps(6);
+}
+
+.progress.small {
+  width: 4rem;
+  height: 0.75rem;
+}
+
+.progress.large {
+  width: 8rem;
+  height: 1.5rem;
+}
+
+@keyframes progress-animation {
+  100% {
+    background-size: 120% 100%;
+  }
+}

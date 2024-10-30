@@ -1,0 +1,28 @@
+.dots {
+  width: 3.5rem;
+  height: 0.85rem;
+  background: radial-gradient(
+      circle closest-side,
+      currentColor 90%,
+      transparent
+    )
+    0 0/33% 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: dots-animation 1.5s steps(4) infinite;
+}
+
+.dots.small {
+  width: 2.5rem;
+  height: 0.6rem;
+}
+
+.dots.large {
+  width: 4.5rem;
+  height: 1rem;
+}
+
+@keyframes dots-animation {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
+}

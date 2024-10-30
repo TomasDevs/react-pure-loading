@@ -1,0 +1,44 @@
+.spinner {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side, #0000 40%, currentColor 41%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, currentColor 0)
+      center/4.5px 100%,
+    linear-gradient(90deg, rgba(0, 0, 0, 0.25) 50%, currentColor 0) center/100%
+      4.5px;
+  background-repeat: no-repeat;
+  animation: spinner-animation 1s infinite steps(12);
+}
+
+.spinner.small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.spinner.large {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.spinner::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes spinner-animation {
+  100% {
+    transform: rotate(1turn);
+  }
+}

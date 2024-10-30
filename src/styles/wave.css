@@ -1,0 +1,50 @@
+.wave {
+  display: flex;
+  gap: 0.2rem;
+  align-items: flex-end;
+}
+
+.wave div {
+  width: 0.25rem;
+  height: 1rem;
+  border-radius: 2px;
+  background-color: currentColor;
+  animation: wave-animation 0.8s infinite ease-in-out;
+}
+
+.wave div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave div:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave div:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave.small div {
+  width: 0.2rem;
+  height: 0.6rem;
+}
+
+.wave.large div {
+  width: 0.3rem;
+  height: 1.5rem;
+}
+
+@keyframes wave-animation {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
