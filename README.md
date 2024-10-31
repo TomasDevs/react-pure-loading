@@ -1,6 +1,6 @@
 # React Pure Loading
 
-**React Pure Loading ** is a lightweight library of loading animations made with pure CSS. These loaders are perfect for performance-focused applications and can be customized with different sizes and colors to fit your design needs.
+**React Pure Loading** is a lightweight library of loading animations made with pure CSS. These loaders are perfect for performance-focused applications and can be customized with different sizes and colors to fit your design needs.
 
 ## Current Version
 
