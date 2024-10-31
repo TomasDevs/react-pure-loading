@@ -1,17 +1,17 @@
-# React Pure Loaders
+# React Pure Loading
 
-**React Pure Loaders** is a lightweight library of loading animations made with pure CSS. These loaders are perfect for performance-focused applications and can be customized with different sizes and colors to fit your design needs.
+**React Pure Loading ** is a lightweight library of loading animations made with pure CSS. These loaders are perfect for performance-focused applications and can be customized with different sizes and colors to fit your design needs.
 
 ## Current Version
 
-- Version: 1.0.0
+- Version: 1.0.2
 
 ## Installation
 
 Install the package with npm:
 
 ```bash
-npm install react-pure-loaders
+npm install react-pure-loading
 ```
 
 ## Peer Dependencies
@@ -36,7 +36,7 @@ import {
   Spinner,
   Progress,
   Bars,
-} from "react-pure-loaders";
+} from "react-pure-loading";
 
 function App() {
   return (
